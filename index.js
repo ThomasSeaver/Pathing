@@ -90,7 +90,7 @@ class Box {
 
     markCircle(ctx, color) {
         ctx.beginPath();
-        ctx.arc(this.topLeft[0] + boxWidth / 2, this.topLeft[1] + boxHeight / 2, 3, 0, 2 * Math.PI, false);
+        ctx.arc(this.topLeft[0] + boxWidth / 2, this.topLeft[1] + boxHeight / 2, (bowWidth / 2) - 3, 0, 2 * Math.PI, false);
         ctx.fillStyle = color;
         ctx.fill();
         ctx.strokeStyle = '#003300';
