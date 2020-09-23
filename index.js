@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded',start,false);
 
-var borderWidth = 2;
+var borderWidth = 4;
 var halfBorder = borderWidth / 2;
 var canvasWidth;
 var canvasHeight;
-var boxesWide = 250;
-var boxesHigh = 100;
-var boxWidth = 5;
-var boxHeight = 5;
+var boxesWide = 30;
+var boxesHigh = 30;
+var boxWidth = 8;
+var boxHeight = 8;
 var xStep = borderWidth + boxWidth;
 var yStep = borderWidth + boxHeight;
-var colProb = 90;
-var rowProb = 90;
+var colProb = 70;
+var rowProb = 70;
 var mazeConfig;
 var maze = [];
 var delay = 25;
