@@ -20,7 +20,7 @@ var exit;
 var stepping;
 var exited = false;
 var entrance = null;
-var algoState = 2;
+var algoState = 0;
 
 class priorityQueue {
     constructor() {
