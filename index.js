@@ -185,6 +185,9 @@ function start() {
     });
 
     stepping = setInterval(function() { 
+        if (entrance != null) {
+            maze[x][y].markCircle(ctx, 'blue');
+        }
         var limit = nodeList.length() / 3;
         for (var i = 0; i < limit; i ++) {
             if (entrance != null && nodeList.length() > 0 && !exited) {
