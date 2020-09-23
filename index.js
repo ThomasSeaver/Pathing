@@ -175,8 +175,11 @@ function start() {
             exited = false;
         }
         let rect = canvas.getBoundingClientRect(); 
-        let x = Math.floor((e.clientX - rect.left) / xStep) - 1;
-        let y = Math.floor((e.clientY - rect.top) / yStep) - 1;
+        let x = Math.floor((e.clientX - rect.left) / xStep);
+        let y = Math.floor((e.clientY - rect.top) / yStep);
+        console.log(e.clientX);
+        console.log(rect.left);
+        console.log(xStep);
         maze[x][y].entrance = true;
         maze[x][y].markCircle(ctx, 'blue');
         entrance = maze[x][y];
