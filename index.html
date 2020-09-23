@@ -1,6 +1,27 @@
 <link rel="stylesheet" href="index.css">
 <script src="index.js"></script>
 
-<div class="center">
-    <canvas id="c" width="800" height="800" style="border:5px solid #ccc"></canvas>
+<div class="column">
+    <div class="row">
+        <canvas id="c" width="800" height="800" style="border:5px solid #ccc"></canvas>
+    </div>
+    <div class="row">
+        <div class="text-box"> Algorithm
+            <select id="algo" onchange="algoChange()">
+                <option value="0">Djikstra's</option>
+                <option value="1">Greedy Best First</option>
+                <option value="2">A*</option>
+            </select>
+        </div>
+        <div class="text-box">Boxes Wide:         <input size="8" type="text" id="boxes-wide"></input></div>
+        <div class="text-box">Boxes High:         <input size="8" type="text" id="boxes-high"></input></div>
+        <div class="text-box">Border Width:       <input size="8" type="text" id="border-width"></input></div>
+        <div class="text-box">Box Width:          <input size="8" type="text" id="box-width"></input></div>
+        <div class="text-box">Box Height:         <input size="8" type="text" id="box-height"></input></div>
+        <div class="text-box">Row Probability:    <input size="8" type="text" id="row-prob"></input></div>
+        <div class="text-box">Column Probability: <input size="8" type="text" id="col-prob"></input></div>
+    </div>
+    <div class="row">
+        <button onclick="restart()">Restart</button>
+    </div>
 </div>

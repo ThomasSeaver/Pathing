@@ -1,5 +1,23 @@
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box{
+  margin-right:3px;
+  margin-left:3px;
+}
